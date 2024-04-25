@@ -4,11 +4,9 @@
  */
 package Logica_Cliente;
 
-import com.mycompany.carta.Carta;
+import Logica_Negocio.Carta;
 import java.util.ArrayList;
 import java.util.Scanner;
-
-
 
 /**
  *
@@ -27,7 +25,7 @@ public class Main {
             
             System.out.println("Ingrese el valor de la carta ");
             carta = lec.nextInt();
-            Carta objCarta = new Carta();
+            Carta objCarta = new Carta(carta);
             Cartas.add(objCarta);
             
         }
